@@ -1,0 +1,13 @@
+import React from "react";
+
+export default function Pet({ animal, breed, name }) {
+  return React.createElement(
+    "div",
+    {},
+    React.createElement("h1", {}, [
+      React.createElement("h1", {}, name),
+      React.createElement("h2", {}, animal),
+      React.createElement("h2", {}, breed)
+    ])
+  );
+};
