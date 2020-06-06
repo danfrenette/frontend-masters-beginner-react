@@ -4,6 +4,7 @@
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
     "format": "prettier \"src/**/*.{js, html}\" --write"
   },
   "keywords": [],
@@ -11,6 +12,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5"
   }
 }
