@@ -3,24 +3,14 @@ import { render } from "react-dom";
 import Pet from "./Pet";
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me You Fuck!"),
-    React.createElement(Pet, {
-      name: "suh dude",
-      animal: "Dog",
-      breed: "unicorn"
-    }),
-    React.createElement(Pet, {
-      name: "bruhh",
-      animal: "explosion",
-      breed: "fiery"
-    }),
-    React.createElement(Pet, {
-      name: "Doink",
-      animal: "cat",
-      breed: "unicorn"
-    })
-  ]);
+  return (
+    <div>
+      <h1>This tag will be overwritten by CSS</h1>
+      <Pet name="supa" animal="hot" breed="Fire" />
+      <Pet name="supa" animal="hot" breed="Fire" />
+      <Pet name="supa" animal="hot" breed="Fire" />
+    </div>
+  );
 };
 
-render(React.createElement(App), document.getElementById("root"));
+render(<App/>, document.getElementById("root"));
